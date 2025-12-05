@@ -1,0 +1,261 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.contenu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.un {
+  background-color: #faeee2;
+  border-radius: 5px;
+  text-align: center;
+  padding: 25px;
+  height: 400px;
+  display: grid;
+  grid-row: span 3 / span 3;
+}
+
+.deux {
+  background-color: #7651dc;
+  border-radius: 5px;
+  text-align: center;
+  height: 400px;
+  display: grid;
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+}
+
+.trois {
+  background-color: #dcd1fc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  height: 670px;
+  display: grid;
+  grid-row: span 4 / span 4;
+  grid-column-start: 4;
+}
+
+.quatre {
+  background-color: #ffcc69;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  height: 557px;
+  display: grid;
+  grid-row: span 3 / span 3;
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.cinq {
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  height: 250px;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.six {
+  background-color: #ffcc69;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  height: 250px;
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+
+.sept {
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  height: 250px;
+  display: grid;
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+.huite {
+  background-color: #7651dc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  height: 250px;
+  display: grid;
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+
+.div-1 {
+  font-size: 40px;
+  color: black;
+}
+
+.diff-div1 {
+  color: blue;
+  font-size: 40px;
+}
+
+.img-div1 {
+  height: 100px;
+  width: 200px;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.div-2 {
+  font-size: 50px;
+  color: white;
+}
+
+.diff-div2 {
+  color: yellow;
+  font-size: 50px;
+}
+
+.img-div2 {
+  height: 40px;
+  width: 200px;
+  display: flex;
+  margin: auto;
+}
+
+.div-3 {
+  font-size: 30px;
+  color: black;
+}
+
+.div-3-1 {
+  font-size: 20px;
+  color: black;
+}
+
+.img-div3 {
+  height: 350px;
+  width: 400px;
+  display: flex;
+  margin: auto;
+}
+
+.div-4 {
+  font-size: 30px;
+  color: black;
+}
+
+.img-div4 {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  margin: auto;
+}
+
+.div-5 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.img-div5 {
+  height: 55px;
+  width: 250px;
+  display: flex;
+  margin: auto;
+}
+
+.div-6 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.img-div6 {
+  height: 150px;
+  width: 250px;
+  display: flex;
+  margin: auto;
+}
+
+.div-7 {
+  font-size: 20px;
+  color: black;
+}
+
+.img-div7 {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  margin: auto;
+}
+
+.div-8 {
+  font-size: 20px;
+  color: white;
+  text-align: right;
+}
+
+.img-div8 {
+  height: 160px;
+  width: 200px;
+  align-items: flex-start;
+  display: flex;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.un,
+.sept {
+  min-height: 250px;
+}
+
+@media (max-width: 700px) {
+  .contenu {
+    grid-template-columns: 1fr;
+  }
+
+  .contenu > div {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+  .un {
+    order: 7;
+  }
+  .deux {
+    order: 1;
+  }
+  .trois {
+    order: 4;
+  }
+  .quatre {
+    order: 8;
+  }
+  .cinq {
+    order: 2;
+  }
+  .six {
+    order: 3;
+  }
+  .sept {
+    order: 6;
+  }
+  .huite {
+    order: 5;
+  }
+}
